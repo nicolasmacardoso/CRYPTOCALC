@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de lucros com criptomoedas</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>
+            Calculadora
+        </h1>
+    </header>
+
+    <main>
+        <section>
+            <div class="input-container">
+                <input class="variavel-input" id="salinicial">
+                <label for="salinicial">Saldo inicial</label>
+                
+                <input class="variavel-input" id="criptcompra">
+                <label for="criptcompra">Valor da criptomoeda no momento da compra</label>
+                
+                <input class="variavel-input" id="criptmax">
+                <label for="criptmax">Valor desejado para a criptomoeda</label>
+                
+                <input class="variavel-input" id="intervalo">
+                <label for="intervalo">Intervalo referente a cada valor</label>
+                
+                <input class="variavel-input" id="dolar">
+                <label for="dolar">Cotação atual do dólar</label>
+            </div>
+
+            <div class="btn-container">
+                <button class="button" onclick="calculaCripto()">
+                    Calcular
+                </button>
+            </div>
+        </section>
+
+        <section class="result-container">
+            <h2>Resultado:</h2>
+            <div id="resultado">
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
+
+<!-- 
+const salinicial = 4150;
+const criptcompra  = 215;
+
+const criptmax     = 265;
+const intervalo  = 1;
+
+const dolar      = 6.17; -->
