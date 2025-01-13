@@ -7,7 +7,7 @@ function calculaCripto () {
     const intervalo    = parseFloat($("#intervalo").val());
     const dolar        = parseFloat($("#dolar").val());
     
-    const criptprecos = Array.from({ length: Math.floor((criptmax - criptcompra) / intervalo) + 1 }, (_, i) => criptcompra + i * intervalo);
+    const criptprecos = Array.from({ length: Math.floor((criptmax - criptcompra) / intervalo) + 1 }, (_, i) => criptcompra + i * intervalo * 2);
     
     const lucros = [];
     

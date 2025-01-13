@@ -6,25 +6,43 @@
 }
 
 body {
-    background: #343434;
-    height: 100vh;
+    background: linear-gradient(117deg, #171717, #3f3f3f);
+    min-height: 100vh;
 }
 
 main {
     max-width: 800px;
-    margin: auto;
+    margin: 10px auto 0;
     padding: 20px;
-    background: linear-gradient(128deg, #737373, #707070);
-    border: 10px solid #464646;
-    border-top: 0;
+    background: linear-gradient(128deg, #484848, #565656);
+    border: 10px solid #ffffff;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70px;
-    background: #616161;
+    height: 90px;
+    background: #ffffff;
+}
+
+h1 {
+    color: black;
+}
+
+label {
+    font-size: 17px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.dados-container {
+    display: grid;
+    grid-template-rows: 50px auto 60px;
 }
 
 .input-container {
@@ -44,8 +62,8 @@ header {
 
 .variavel-input {
     background: transparent;
-    border: 1px solid lightgray;
-    border-width: 0 0 1px 0;
+    border: 0;
+    border-bottom: 2px solid lightgray;
     padding-left: 5px;
     font-size: 14px;
 }
