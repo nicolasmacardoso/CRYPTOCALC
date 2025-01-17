@@ -15,7 +15,7 @@ main {
     margin: 10px auto 0;
     padding: 20px;
     background: linear-gradient(128deg, #484848, #565656);
-    border: 10px solid #ffffff;
+    border: 10px solid #f0f0f0;
 }
 
 header {
@@ -84,6 +84,13 @@ textarea:focus, input:focus, select:focus {
 
 h3 {
     margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0;
 }
 
 .button {

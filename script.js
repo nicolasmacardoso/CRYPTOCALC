@@ -18,18 +18,21 @@ function calculaCripto () {
     
         lucros.push({
             percentual: percentlucro,
-            lucroliq: `R$ ${ (lucro * dolar).toFixed(2) }`,
-            valtt: `R$ ${ (novosaldo * dolar).toFixed(2) }`,
-            precocript:`$${ criptnovopreco.toFixed(2) }, R$ ${ (criptnovopreco * dolar).toFixed(2) })`
+            lucroliq: `R$ ${ (lucro * dolar).toFixed(2) }, $ ${ (lucro).toFixed(2) }`,
+            valtt: `R$ ${ (novosaldo * dolar).toFixed(2) }, $ ${ (novosaldo).toFixed(2) }`,
+            precocript:` R$ ${ (criptnovopreco * dolar).toFixed(2) }, $${ criptnovopreco.toFixed(2) })`
         });
     });
     
     lucros.forEach(lucro => {
         $("#resultado").append(`
-            <h3>Lucro de ${lucro.percentual}%</h3>
-            <span>Lucro líquido: ${lucro.lucroliq}</span>
-            <span>Valor total: ${lucro.valtt}</span>
-            <span>Preço da criptomoeda: ${lucro.precocript}</span>
+            <div class="info-container">
+                <h4>Lucro de ${lucro.percentual}%</h4>
+
+                <span>Lucro líquido: ${lucro.lucroliq}</span>
+                <span>Valor total: ${lucro.valtt}</span>
+                <span>Preço da criptomoeda: ${lucro.precocript}</span>
+            </div>
         `)        
     })
 }
