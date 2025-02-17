@@ -6,7 +6,6 @@
     <title>Calculadora de lucros com criptomoedas</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <script src="script.js"></script>
     <script src="jquery-3.7.0.min.js"></script>
 
@@ -19,14 +18,22 @@
     </header>
 
     <main>
-        <section class="dados-container">
-            <h3>
-                Todos os valores devem ser informados em dólares:
-            </h3>
-
+        <section>
             <div class="input-container">
-                <input class="variavel-input" id="salinicial">
-                <label for="salinicial">Saldo inicial</label>
+                <div class="box-inputs">
+                    <div class="textfield">
+                        <input class="variavel-input" id="salinicial">
+                        <label for="salinicial">Saldo inicial</label>
+                    </div>
+                    
+                    <div class="textfield"">
+                        <select class="variavel-input" id="tiposalini">
+                            <option value="1" selected>Dinheiro</option>
+                            <option value="2">Quantidade de tokens</option>
+                        </select>
+                        <label for="tiposalini">Tipo</label>
+                    </div>
+                </div>
                 
                 <input class="variavel-input" id="criptcompra">
                 <label for="criptcompra">Valor da criptomoeda no momento da compra</label>
@@ -36,9 +43,6 @@
                 
                 <input class="variavel-input" id="intervalo">
                 <label for="intervalo">Intervalo referente a cada valor</label>
-                
-                <input class="variavel-input" id="dolar">
-                <label for="dolar">Cotação atual do dólar (em reais)</label>
             </div>
 
             <div class="btn-container">
@@ -55,9 +59,5 @@
             </div>
         </section>
     </main>
-
-    <footer>
-
-    </footer>
 </body>
 </html>
