@@ -45,6 +45,17 @@ h3 {
     grid-template-rows: 50px auto 60px;
 }
 
+.box-inputs {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    gap: 2%;
+}
+
+.textfield {
+    display: flex;
+    flex-direction: column;
+}
+
 .input-container {
     display: flex;
     flex-direction: column;
