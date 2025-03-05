@@ -93,6 +93,11 @@ textarea:focus, input:focus, select:focus {
     flex-direction: column;
 }
 
+.info-result {
+    display: flex;
+    flex-direction: column;
+}
+
 h3 {
     margin-top: 20px;
 }
