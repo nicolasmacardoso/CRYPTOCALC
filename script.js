@@ -32,9 +32,9 @@ function calculaCripto () {
                 $("#resultado").append(`
                     <div class="info-result">
                         <h3>Lucro de ${lucro.percentual}%</h3>
-                        <span>Lucro lÃ­quido: ${lucro.lucroliq}</span>
+                        <span>Lucro líquido: ${lucro.lucroliq}</span>
                         <span>Valor total: ${lucro.valtt}</span>
-                        <span>PreÃ§o da criptomoeda: ${lucro.precocript}</span>
+                        <span>Preço da criptomoeda: ${lucro.precocript}</span>
                     </div>
                 `)        
             })
